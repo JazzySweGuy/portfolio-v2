@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+.section {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home {
+    background-color: #7d8bf4;
+}
+.About {
+    background-color: #df7070;
+}
+.Projects {
+    background-color: #e1ec68;
+}
+.Learning {
+    background-color: #7ff491;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    position: fixed;
+    top:30px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(237, 234, 234, 0.164);
+    backdrop-filter: blur(2px);
+    padding: 12px 60px;
+    border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
